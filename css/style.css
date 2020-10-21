@@ -1,0 +1,37 @@
+img, embed, object, video { max-width: 100%; }
+body {
+  height: 100%;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+}
+header {
+  background-color: black;
+  color: white;
+  height: 75px;
+  width: 100%;
+  padding-top: 18px;
+  font-size: 25pt;
+  margin: auto;
+  text-align: center;
+}
+li {
+  margin: 5px 0px 5px 0px;
+  list-style-type: none;
+  color: black;
+}
+.container-fluid {
+  background-color: black;
+}
+.map-view {
+  background-color: #eee;
+  margin: 0 auto;
+  width: 80%;
+}
+.map {
+  height: 600px;
+  width: 75%;
+  border-style: solid;
+  border-color: black;
+}

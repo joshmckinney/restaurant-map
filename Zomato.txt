@@ -1,0 +1,7 @@
+// Example API usage to gather location data
+
+//Get res_id
+curl -X GET --header "Accept: application/json" --header "user-key: USERKEYHERE" "https://developers.zomato.com/api/v2.1/search?entity_type=subzone&entity_id=151495&q=in%20n%20out%20burger"
+
+//Use res_id to return specific restaurant info
+curl -X GET --header "Accept: application/json" --header "user-key: USERKEYHERE" "https://developers.zomato.com/api/v2.1/restaurant?res_id=17592518"

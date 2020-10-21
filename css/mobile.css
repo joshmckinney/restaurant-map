@@ -1,0 +1,26 @@
+.map-view {
+  background-color: #eee;
+  margin: 0 auto;
+  width: 100%;
+}
+.map-list {
+  margin-top: 5px;
+  text-align: center;
+  background-color: #fff;
+}
+.map {
+  height: 400px;
+  width: 90%;
+  border-style: solid;
+  border-color: black;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+header {
+  padding-top: 20px;
+  font-size: 16pt;
+}
+hr {
+  display: none;
+}

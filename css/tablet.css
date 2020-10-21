@@ -1,0 +1,13 @@
+.map-list {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.map {
+  margin: 0 auto;
+  height: 500px;
+}
+header {
+  padding-top: 18px;
+  font-size: 20pt;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Carson City Restaurant Map</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:750px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:750px) and (max-width:1024px)" href="css/tablet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Open+Sans:300" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+     <span>Carson City Restaurant Map</span>
+    </header>
+    <hr>
+    <div class="container-fluid map-view">
+      <div class="row">
+        <div class="col-md-2 map-list">
+          <input class="flex-column" size="10%" data-bind="textInput: searchOption, valueUpdate: 'afterkeydown'" placeholder="Search...">
+          <ul class="nav flex-column" data-bind="foreach: filteredMarker">
+            <a href="#"><li data-bind="text: title, click: $parent.populateAndBounceMarker"></li></a>
+          </ul>
+        </div>
+        <div id="map" class="col-md-8 map"></div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <hr>
+    <script src="js/locations.js"></script>
+    <script src="js/mapstyle.js"></script>
+    <script src="js/script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&v=3&callback=initMap"
+        onerror="mapError()">
+    </script>
+  </body>
+</html>
